@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Home = () => {
+const Dashboard = () => {
   return (
     <section>
-      Home Page
+      Dashboard Page
     </section>
   )
 }
 
-export default Home
+export default Dashboard
