@@ -3,7 +3,7 @@ import './navbar.css'
 
 import { Link } from "react-router-dom";
 import { FaBars } from 'react-icons/fa'
-import { ImCross } from 'react-icons/fa'
+import { ImCross } from 'react-icons/im'
 
 
 const Navbar = () => {
@@ -35,9 +35,8 @@ const Navbar = () => {
             <li>Profile</li>
           </Link>
         </ul>
-        <button className='mobile-menu'>
-          {Mobile? <ImCross />}
-          <FaBars />
+        <button className="mobile-menu">
+          {Mobile ? <ImCross /> : <FaBars />}
         </button>
       </div>
     </nav>
