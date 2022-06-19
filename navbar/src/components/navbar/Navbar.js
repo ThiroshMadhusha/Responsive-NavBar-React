@@ -15,13 +15,11 @@ const Navbar = () => {
       <div className="container">
         <h3 className="logo">Logo</h3>
 
-        <ul className="nav-links">
+        <ul className={Mobile ? "nav-links-mobile" : "nav-links"} onClick={()=>setMobile(false)}>
           <Link to="/">
             <li>Home</li>
           </Link>
-          <Link to="/dashboard">
-            <li>Dashboard</li>
-          </Link>
+          
           <Link to="/about">
             <li>About</li>
           </Link>
@@ -35,7 +33,7 @@ const Navbar = () => {
             <li>Profile</li>
           </Link>
         </ul>
-        <button className="mobile-menu">
+        <button className="mobile-menu" onClick={()=>setMobile(!Mobile)}>
           {Mobile ? <ImCross /> : <FaBars />}
         </button>
       </div>
