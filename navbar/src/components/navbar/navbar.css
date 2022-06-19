@@ -1,1 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&family=Poppins:wght@300;400;500;600&family=Work+Sans:wght@300&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","sans-serif";
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar{
+    line-height: 10vh;
+    height: 10vh;
+    box-shadow: rgba(50,50,93,0.23) 0 30px 30px -20px;
+}
+.logo{
+    font-size: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+.nav-links li{
+    color:#fff;
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.nav-links Link{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+.mobile-menu{
+    display: none;
+}
+
+/* Media Query */
